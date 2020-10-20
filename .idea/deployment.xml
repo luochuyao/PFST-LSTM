@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="ices-8-core">
+  <component name="PublishConfigData" autoUpload="Always" serverName="ices-8-core" uploadOnCheckin="618bb5a9-75e9-4a47-bc9f-aa6fb33ec227">
     <serverData>
+      <paths name="bowen">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="ex_server">
         <serverdata>
           <mappings>
@@ -31,6 +38,13 @@
         </serverdata>
       </paths>
       <paths name="ices1-146">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="ices1-146-chuyao">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
@@ -93,6 +107,27 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="ices719-2">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="ices719-3">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="ices@10.249.176.200:22">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="ices_xiyang">
         <serverdata>
           <mappings>
@@ -115,6 +150,7 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="ices-8-core" />
     <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>
