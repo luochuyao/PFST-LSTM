@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="python@ssh://ices@10.248.19.224:22/home/ices/anaconda3/bin/python" />
+        <remote-mappings server-id="python@ssh://ices@10.248.19.229:22/home/ices/anaconda3/bin/python" />
+        <remote-mappings server-id="python@sftp://root@10.249.179.156:22/usr/bin/python">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="/home/ices/PycharmProject/FST_ConvRNN" />
+            </list>
+          </settings>
+        </remote-mappings>
+        <remote-mappings server-id="python@ssh://ices@10.248.19.48:22/home/ices/anaconda3/bin/python">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="/home/ices/PycharmProject/FST_ConvRNNs" />
+            </list>
+          </settings>
+        </remote-mappings>
+      </list>
+    </list>
+  </component>
+</project>
