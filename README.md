@@ -10,7 +10,7 @@ Required python libraries: torch (>=1.4.0) + opencv + numpy + scipy (== 1.0.0) +
 Tested in ubuntu + nvidia 2080Ti with cuda (>=10.1).
 
 # Datasets
-We conduct experiments on CIKM AnalytiCup 2017 datasets:[CIKM_Radar](https://tianchi.aliyun.com/competition/entrance/231596/information)  
+We conduct experiments on CIKM AnalytiCup 2017 datasets: [CIKM_AnalytiCup_Address](https://tianchi.aliyun.com/competition/entrance/231596/information) or [CIKM_Rardar](https://drive.google.com/drive/folders/1IqQyI8hTtsBbrZRRht3Es9eES_S4Qv2Y?usp=sharing) 
 
 # Training
 Use any '.py' script in the path of experiment/CIKM/ to train the models. To train the proposed model on the radar, we can simply run the experiment/CIKM/dec_PFST_ConvLSTM.py
