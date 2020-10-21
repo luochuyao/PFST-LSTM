@@ -20,7 +20,7 @@ You might want to change the parameter and setting, you can change the files in 
 
 The preprocess method and data root path can be modified in the data/data_iterator.py file
 
-There are all trained models, we will upload the download address recently.
+There are all trained models. You can download it following this address:[trained model](https://drive.google.com/drive/folders/1RB_V418msSLFSzplXYfzlnUZ7M79dt_l?usp=sharing)
 
 
 # Evaluation
