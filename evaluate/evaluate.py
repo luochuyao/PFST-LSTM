@@ -381,7 +381,7 @@ def eva_hss_csi_java(model_name,jd):
     return hss,csi
 
 def seq_eva_hss_csi_java(model_name,jd):
-
+    print(model_name)
     result = jd.evaluate_seq(model_name,test_root,evaluate_root)
     hss = []
     csi = []
@@ -462,7 +462,10 @@ def plot_seq_mse(datas,names,model_names):
     plt.figure(figsize=(7.5,5))
 
     for idx,name in enumerate(names):
-        plt.plot(x,datas[name])
+        if name == 'CIKM_dec_PFST_ConvLSTM_test':
+            plt.plot(x,datas[name],color = 'black')
+        else:
+            plt.plot(x,datas[name])
         names[idx] = model_names[idx]+':'+str(np.mean(np.array(datas[name])))[:5]
 
     plt.grid()
@@ -486,8 +489,10 @@ def plot_seq_hss_or_csi(datas,names,model_names,type):
 
 
         for idx,name in enumerate(names):
-
-            plt.plot(x,datas[name][:,threashold_i])
+            if name == 'CIKM_dec_PFST_ConvLSTM_test':
+                plt.plot(x, datas[name][:, threashold_i],color='black')
+            else:
+                plt.plot(x,datas[name][:,threashold_i])
 
 
         plt.grid()
@@ -574,22 +579,23 @@ def mse_sequence_test(test_model_list,model_names,is_plot=True):
 if __name__ == '__main__':
     test_model_list = [
         "CIKM_dec_ConvLSTM_test",
-        "CIKM_dec_ST_ConvLSTM_test",
         "CIKM_dec_TrajLSTM_test",
         "CIKM_dec_ST_TrajLSTM_test",
+        "CIKM_dec_ST_ConvLSTM_test",
+        "CIKM_dec_PF_ConvLSTM_test",
         "CIKM_dec_PFST_ConvLSTM_test",
     ]
     model_names = [
-        "ConvLSTM",
+        "Conv-LSTM",
+        "Traj-LSTM",
+        "ST-Traj-LSTM",
         "ST-LSTM",
-        "TrajLSTM",
-        "ST-TrajLSTM",
+        "PF-LSTM",
         "PFST-LSTM"
     ]
 
-
     # mse_test(test_model_list,model_names)
-    # mse_sequence_test(test_model_list,model_names)
+    mse_sequence_test(test_model_list,model_names)
 
     # the speed of calculating the HSS and CIS by python is too slow. So, we utilize java to computer it
 

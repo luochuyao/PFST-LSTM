@@ -29,9 +29,10 @@ def sample_radar_sequence(sample_index):
     p_root = evaluate_root
     evaluate_folds = [
         "CIKM_dec_ConvLSTM_test",
-        "CIKM_dec_ST_ConvLSTM_test",
         "CIKM_dec_TrajLSTM_test",
         "CIKM_dec_ST_TrajLSTM_test",
+        "CIKM_dec_ST_ConvLSTM_test",
+        "CIKM_dec_PF_ConvLSTM_test",
         "CIKM_dec_PFST_ConvLSTM_test",
     ]
 
@@ -57,11 +58,11 @@ def sample_radar_sequence(sample_index):
 
 def plot_radar(preds,ground_truths,img_name,flag = True):
 
-    fig = plt.figure(figsize=(15,6))
-    gs = GridSpec(6,15)
+    fig = plt.figure(figsize=(15,7))
+    gs = GridSpec(7,15)
     # fig,ax = plt.subplots(nrows = 6,ncols = 15)
     for i in range(15):
-        ax = plt.subplot2grid((6,15),(0,i))
+        ax = plt.subplot2grid((7,15),(0,i))
         ax.set_xticks([])
         ax.set_yticks([])
         if flag:
@@ -74,7 +75,7 @@ def plot_radar(preds,ground_truths,img_name,flag = True):
 
         for i in range(10):
 
-            ax = plt.subplot2grid((6, 15), (index+1, i+5))
+            ax = plt.subplot2grid((7, 15), (index+1, i+5))
             if flag:
                 ax.imshow(color_radar(current_pred_imgs[i]))
             else:
