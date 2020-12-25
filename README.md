@@ -2,7 +2,7 @@
 
 This is a Pytorch implementation of PFST-LSTM, a recurrent model for precipitation nowcasting (radar echo extrapolation) as described in the following paper:
 
-PFST-LSTM: a SpatioTemporal LSTM Model with Pseudo-flow Prediction for Precipitation Nowcasting, by Chuyao Luo, Xutao Li, Yunming Ye.
+PFST-LSTM: a SpatioTemporal LSTM Model with Pseudo-flow Prediction for Precipitation Nowcasting, by Chuyao Luo, Xutao Li, Yunming Ye.[Access Paper](https://ieeexplore.ieee.org/abstract/document/9272611/)
 
 # Setup
 
